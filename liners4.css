@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(246, 235, 235);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 1.5%;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  color: orangered;
+}
+
+.shock {
+  margin-top: -6.5%;
+  height: 800px;
+  width: 800px;
+  background-image: url(Images/DearMe.jpg);
+  background-size: auto;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+}
+#dearMe {
+  position: absolute;
+  top: 19%;
+  left: 80%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transform: rotate(18deg);
+  animation: turnAround 12s 1s linear infinite;
+}
+
+@keyframes turnAround {
+  0% {
+    transform: rotate(18deg) scale(0.8);
+    color: black;
+  }
+  50% {
+    transform: rotate(500deg) scale(1.1);
+    color: orangered;
+  }
+  100% {
+    transform: rotate(18deg) scale(0.8);
+    color: black;
+  }
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+
+.warning {
+  height: 85%;
+  margin-top: 5%;
+  background-image: url(Images/newspaper.jpg);
+  background-position: center;
+  background-repeat: repeat-y;
+  opacity: 0;
+  animation: newsPaper 10s 0s linear infinite;
+}
+@keyframes newsPaper {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#news {
+  margin-top: 27.5%;
+  margin-left: 35.2%;
+  margin-right: 35%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: orangered;
+}
+
+#decide {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: orangered;
+}

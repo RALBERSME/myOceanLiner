@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="liners4.css" />
+    <title>Last Minutes Before Departure</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Last Minutes Before Departure</h1>
+      <div class="split">
+        <div class="warning" onclick="window.location.href='leave.html'">
+          <p id="news">
+            In New York, Boston, and Philadelphia newspapers publish warnings
+            concerning Americans traveling on British ships through the British
+            war zone. The warning states that such ships are liable for
+            destruction. Many passengers set to board the Lusitania are alarmed.
+          </p>
+        </div>
+
+        <div class="shock"></div>
+      </div>
+      <p id="dearMe">
+        Dear me!<br />
+        What`s that?
+      </p>
+      <p id="decide">
+        What do you want to do? Do you believe the rumors in the magazines or do
+        you stay on board?<br />
+        You heard the captain say that we would be protected by British warships
+        as soon as we entered English waters. The RMS Lusitania is a fast and
+        safe ship.<br />
+        You must decide now. The ship will weigh anchor in 30 seconds. If you do
+        <u>not</u> want to stay here, click on the newspaper article and your
+        journey will be over. <br />Otherwise nothing needs to be done ....we
+        will leave in 20 seconds.
+      </p>
+    </div>
+    <script>
+      setTimeout(() => {
+        window.location.href = "liners5.html";
+      }, 50000);
+    </script>
+  </body>
+</html>

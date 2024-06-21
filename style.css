@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url("Images/receptionist.jpg");
+  background-position: 90% 40%;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  margin-top: 1.5%;
+  margin-left: 7.5%;
+  width: 50%;
+  font-size: 1.4rem;
+}
+
+h1 {
+  margin-bottom: 1.5%;
+}
+#button {
+  margin-left: -14%;
+  margin-top: 51.5%;
+  padding: 1.5% 3%;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  transform: skewX(35deg) translateX(250px) rotate(-1deg);
+  transform-origin: bottom right;
+  transition: all 1s;
+  /* animation: startAdventure 5s 2s linear forwards; */
+}
+
+@keyframes startAdventure {
+  0% {
+    padding: 1.5% 3%;
+    transform: skewX(35deg) translateX(250px) rotate(-1deg) scale(1);
+    margin-left: -12%;
+    margin-top: 51%;
+  }
+  90% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  92% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(10deg) scale(1.5);
+
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  93% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(-10deg) scale(1.5);
+    background-image: linear-gradient(rgb(222, 238, 247), blanchedalmond);
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  94% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(10deg) scale(1.5);
+    background-image: linear-gradient(blanchedalmond, whitesmoke);
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  95% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(-10deg) scale(1.5);
+    background-image: linear-gradient(rgb(222, 238, 247), blanchedalmond);
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  96% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);
+    background-image: linear-gradient(blanchedalmond, whitesmoke);
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  100% {
+    padding: 2.5% 6%;
+    transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);
+    background-image: linear-gradient(blanchedalmond, whitesmoke);
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+}

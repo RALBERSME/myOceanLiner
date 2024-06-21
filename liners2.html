@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="liners2.css" />
+    <title>Our Promise - your ship</title>
+  </head>
+  <body>
+    <section id="section1">
+      <div id="container1">
+        <h1>Our promise.</h1>
+        <h2>We have learned from the Titanic disaster!</h2>
+        <h4>(scroll down)</h4>
+      </div>
+      <div class="promiseContainer">
+        <div class="promiseBox">
+          <i class="fas fa-ship"></i>
+          <h4>Lifeboats</h4>
+          <p>
+            From the studies done after the Titanic, recommendations were made
+            to have enough lifeboats for all. We have enough lifeboats on board.
+          </p>
+        </div>
+        <div class="promiseBox">
+          <i class="fas fa-balance-scale-left"></i>
+          <h4>Devices to launch lifeboats</h4>
+          <p>
+            From the studies done after the Titanic, recommendations were made
+            to use devices to help launch lifeboats while a boat was listing.
+          </p>
+        </div>
+        <div class="promiseBox">
+          <i class="fas fa-tshirt"></i>
+          <h4>Lifejackets</h4>
+          <p>
+            From the studies done after the Titanic, recommendations were made
+            to have enough lifejackets for all. We have enough lifejackets on
+            board.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="section2">
+      <div class="container2">
+        <h2>Facts & Figures about your ship</h2>
+        <br />
+        <ul class="facts">
+          <li>Flag: United Kingdom</li>
+          <li>Shipping company: Cunard Line</li>
+          <li>Port of registry: Liverpool</li>
+          <li>Gross tonnage: 31,550</li>
+          <li>Length overall: 787 feet / 239.8 meters</li>
+          <li>Launch date: June 7th, 1906</li>
+          <li>
+            Maiden voyage: Liverpool, England - New York, USA, 7 - 13 September
+            1907
+          </li>
+        </ul>
+        <br /><br />
+        <h2>Why your ship is outstanding:</h2>
+        <br />
+        <ul class="facts">
+          <li>First British four-stacker.</li>
+          <li>First four-stacker with evenly spaced funnels.</li>
+          <li>First ship larger than 30,000 gross tons.</li>
+          <li>First ship to cross the Atlantic in under five days.</li>
+          <li>First quadruple-screw speed record-breaker.</li>
+          <li>First turbine-driven speed record-breaker.</li>
+          <li>First ship wider than the Great Eastern (1858).</li>
+        </ul>
+        <br />
+        <h3>
+          In summary, one can only dream of this ship. You see, the ship is
+          already sailing into New York Harbor. Now you just need to register
+          and then we're off. In five days you'll be in Liverpool.
+        </h3>
+        <br />
+        <h4>(scroll down for registration form)</h4>
+      </div>
+    </section>
+    <section id="section3">
+      <div class="container3">
+        <h1>Registration form:</h1>
+        <h2>You are free to choose who you want to be on this trip.</h2>
+        <h3>
+          Therefore click on one of the option buttons and take over the role of
+          that passenger who really took part in that trip.
+        </h3>
+        <div class="btns">
+          <button class="option" id="btn1">Captain</button>
+          <button class="option" id="btn2">Crew Member</button>
+          <button class="option" id="btn3">VIP Passenger</button>
+          <button class="option" id="btn4">Older Lady / Passenger</button>
+          <button class="option" id="btn5">Young Lady / Passenger</button>
+          <button class="option" id="btn6">Male Passenger</button>
+          <button class="option" id="btn7">Baby / Passenger</button>
+        </div>
+      </div>
+      <div class="displayData">
+        <h2><u>You are travelling as:</u></h2>
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><span id="firstName"></span></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><span id="lastName"></span></td>
+          </tr>
+          <tr>
+            <td>Nationality:</td>
+            <td><span id="nationality"></span></td>
+          </tr>
+          <tr>
+            <td>Year of birth:</td>
+            <td><span id="byear"></span></td>
+          </tr>
+          <tr>
+            <td>Status on Board:</td>
+            <td><span id="status"></span></td>
+          </tr>
+          <tr>
+            <td>Accommodation:</td>
+            <td><span id="accommodation"></span></td>
+          </tr>
+        </table>
+      </div>
+      <button class="onBoardBtn" onclick="window.location.href='liners3.html'">
+        Hello <span id="helloName"></span> ! - click here to come on board.
+      </button>
+    </section>
+    <script src="liners2.js"></script>
+  </body>
+</html>

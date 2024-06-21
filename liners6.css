@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Images/kitchen.png);
+  background-position: center/cover;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.split {
+  display: grid;
+  grid-template-columns: 1.75fr 3fr 2.5fr;
+}
+
+h3 {
+  color: wheat;
+  font-size: 1.5rem;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+#continue {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  text-decoration: none;
+  padding: 15px 25px;
+  letter-spacing: 1.5;
+  font-weight: 700;
+  background-color: wheat;
+  color: black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#continue:hover {
+  background-color: wheat;
+  color: black;
+  transform: translateX(5px) translateY(5px);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+}

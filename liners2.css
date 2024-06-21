@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#section1 {
+  background-image: url("Images/ship4.jpg");
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#container1 {
+  padding-top: 15%;
+  padding-left: 58%;
+}
+h1 {
+  font-size: 2.5rem;
+  color: rgb(243, 232, 148);
+}
+
+.promiseContainer {
+  display: flex;
+  margin: 10%;
+}
+.promiseBox {
+  width: 90%;
+  margin-left: 5%;
+  padding: 2.5%;
+  background-color: rgb(77, 188, 138);
+  border-radius: 10px;
+  border-top: 4px solid rgb(243, 232, 148);
+  border-bottom: 4px solid rgb(243, 232, 148);
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.fas {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #4dbc8a;
+  background-color: whitesmoke;
+  padding: 6px;
+  outline: 2px solid rgb(243, 232, 148);
+  outline-offset: 0.75px;
+  margin-bottom: 15px;
+}
+h4 {
+  margin-bottom: 15px;
+}
+#section2 {
+  background-color: #4dbc8a;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ehoundstooth%3C/title%3E%3Cg fill='%238381c0' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 18h6l6-6v6h6l-6 6H0M24 18v6h-6M24 0l-6 6h-6l6-6M12 0v6L0 18v-6l6-6H0V0'/%3E%3C/g%3E%3C/svg%3E");
+}
+.container2 {
+  padding: 2.5% 5%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+}
+.facts {
+  list-style: none;
+}
+li {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+#section3 {
+  background-image: url("Images/ship3.jpg");
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-color: rgb(249, 249, 222);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.container3 {
+  margin-left: 50%;
+  margin-right: 5%;
+  padding-top: 2.5%;
+}
+
+.container3 h1,
+.container3 h2,
+.container3 h3 {
+  margin-top: 15px;
+  color: rgba(255, 69, 0, 0.8);
+}
+.btns {
+  display: flex;
+}
+.option {
+  margin-right: 5px;
+  margin-top: 15px;
+  color: white;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: rgba(255, 69, 0, 0.8);
+  background-image: radial-gradient(
+      93% 87% at 87% 89%,
+      rgba(0, 0, 0, 0.23) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 87% at 26% 20%,
+      rgba(247, 251, 203, 0.41) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.option:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.displayData {
+  color: rgba(255, 69, 0, 0.8);
+  margin-left: 50%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.displayData td {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1.5rem;
+}
+.onBoardBtn {
+  margin-left: 50%;
+  margin-top: 10px;
+  background-color: rgba(255, 69, 0, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  transform: rotateX(90deg);
+  background-image: radial-gradient(
+      93% 87% at 87% 89%,
+      rgba(0, 0, 0, 0.23) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 87% at 26% 20%,
+      rgba(247, 251, 203, 0.41) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.onBoardBtn:hover {
+  transform: translateX(5px) translateY(5px);
+  color: rgba(255, 69, 0, 0.8);
+  background-color: lightcyan;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  background-image: radial-gradient(
+      93% 87% at 87% 89%,
+      rgba(0, 0, 0, 0.23) 0%,
+      transparent 86.18%
+    ),
+    radial-gradient(
+      66% 87% at 26% 20%,
+      rgba(234, 236, 215, 0.41) 0%,
+      rgba(255, 255, 255, 0.417) 89.79%,
+      rgba(255, 255, 255, 0.185) 100%
+    );
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

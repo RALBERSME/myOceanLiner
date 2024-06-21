@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(246, 235, 235);
+  font-family: "Montserrat", sans-serif;
+  background-image: url(Images/party.jpg);
+  background-position: center/cover;
+  background-repeat: repeat;
+}
+
+.container {
+  margin: 13%;
+  font-size: 2rem;
+  color: green;
+  letter-spacing: 2;
+  text-align: center;
+}
+h2 {
+  text-shadow: 1px 2px yellow;
+}
+a {
+  text-decoration: none;
+  padding: 20px;
+  background-image: linear-gradient(
+    rgb(27, 112, 173),
+    white,
+    yellow,
+    orangered
+  );
+  box-shadow: 3px 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-left: 35px;
+  border-radius: 10px 50px 10px;
+  cursor: pointer;
+}
+a:hover {
+  background-image: linear-gradient(yellow, white, rgb(27, 173, 71), green);
+  color: black;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transform: translateX(5px) translateY(5px);
+}
