@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(Images/streamer-613230_1920.jpg);
+  background-position: center/cover;
+  background-repeat: repeat;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2;
+  color: #ea0f2d;
+  text-align: center;
+}
+h1 {
+  margin-top: 20%;
+  padding: 20px;
+  background-color: rgba(116, 242, 162, 0.6);
+  border: 5px solid greenyellow;
+  border-bottom: 10px solid #fcfc7a;
+
+  text-shadow: 2px 2px 2px white;
+}
+
+a {
+  position: absolute;
+  text-decoration: none;
+  height: 280px;
+  width: 280px;
+  padding: 95px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+a:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+#dance {
+  top: -12%;
+  left: 75%;
+  background-color: #0983e8;
+  box-shadow: 5px 5px 15px 10px yellow;
+}
+
+#films {
+  top: -38%;
+  left: 30%;
+  background-color: #1ad469;
+  box-shadow: 5px 5px 15px 10px #ea0f2d;
+}
+#fashion {
+  top: 28%;
+  left: 65%;
+  background-color: #ea0f2d;
+  box-shadow: 5px 5px 15px 10px #1ad469;
+}
+#food {
+  top: 10%;
+  left: 15%;
+  background-color: #fcfc7a;
+  color: black;
+  box-shadow: 5px 5px 15px 10px #0983e8;
+}

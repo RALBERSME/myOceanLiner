@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dosis:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e1ddb8;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.section1 {
+  position: relative;
+  background-image: url(Images/border-6530976_1280.jpg);
+  background-position: center/cover;
+  background-repeat: no-repeat;
+}
+#section1Title {
+  position: absolute;
+  background-color: #e1ddb8;
+  top: 3.5%;
+  left: 8.5%;
+  width: 49.5%;
+  height: 12.5%;
+}
+.container {
+  margin: 5%;
+}
+.video {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 37%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.textContainer {
+  position: absolute;
+  bottom: 60px;
+  left: 33%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageText {
+  width: 120px;
+  height: 140px;
+  color: white;
+  transition: 0.5s;
+  text-align: center;
+  align-content: center;
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: 3px dashed #fff;
+  outline-offset: 0.6px;
+  outline: 3px solid black;
+  background: black;
+  padding: 3px 3px 0;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.imageText:hover {
+  width: 250px;
+  opacity: 1;
+}
+/*naviation part*/
+
+#navigation {
+  position: absolute;
+  top: 2.5%;
+  left: 60%;
+  width: 50%;
+  color: black;
+  padding: 50px 225px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+#navigation ul {
+  margin-top: 5%;
+}
+
+#navigation ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+#navigation ul li a {
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+#navigation ul li:hover {
+  border-radius: 10px;
+  border: 3px dashed #fff;
+  outline-offset: 0.6px;
+  outline: 3px solid black;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+}
+#navigation ul li a:hover {
+  color: white;
+}
+/* section 2 */
+.section2 {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Dancing", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.splitMovies {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+}
+.moviesContainer {
+  height: 100%;
+  padding: 10% 5%;
+}
+.moviesContainer ul li {
+  list-style: none;
+  margin-bottom: 60px;
+}
+
+.moviesContainer ul li a {
+  position: relative;
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1px wheat;
+  font-size: 35px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.moviesContainer a:before,
+.moviesContainer a:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.moviesContainer a:hover:before {
+  color: #47190c;
+  z-index: 1;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-text-stroke: 1px black;
+  transform: translate(200px, -45px);
+}
+#backTop:hover:before {
+  transform: translate(0px, -45px);
+  color: #47190c;
+  text-transform: uppercase;
+}
+.moviesContainer a:hover {
+  color: #e3b180;
+  -webkit-text-stroke: 1px black;
+  transition: 0.5s;
+}
+.imgMovies {
+  margin-top: 17.5%;
+  color: wheat;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+/* section 3 */
+
+.section3 {
+  position: relative;
+  background-color: black;
+  font-family: "Cabin", sans-serif;
+}
+.splitCity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hide {
+  display: none;
+}
+.newY {
+  position: relative;
+  height: 100vh;
+  text-align: left;
+}
+
+.cityButton {
+  position: absolute;
+  text-decoration: none;
+  color: rgb(98, 228, 165);
+  border: 5px solid rgb(98, 228, 165);
+  background-color: black;
+  padding: 25px 50px;
+  border-radius: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+}
+#startBtn {
+  left: 20%;
+  top: 20%;
+  cursor: pointer;
+  animation: shining 2s 0s ease-in-out infinite;
+}
+@keyframes shining {
+  0% {
+    box-shadow: 1px 1px 1px 1px rgb(98, 228, 165);
+  }
+  100% {
+    box-shadow: 1px 2px 15px 10px rgb(174, 233, 36);
+  }
+}
+.Liverpool {
+  position: relative;
+  height: 100vh;
+  text-align: right;
+}
+#finishBtn {
+  right: 20%;
+  bottom: 15%;
+  color: rgb(244, 85, 244);
+  border: 5px solid rgb(244, 85, 244);
+  cursor: pointer;
+  animation: shining2 2s 0s ease-in-out infinite;
+}
+#finishBtn:hover,
+#startBtn:hover {
+  transform: scale(1.1);
+}
+@keyframes shining2 {
+  0% {
+    box-shadow: 1px 1px 1px 1px rgb(244, 85, 244);
+  }
+  100% {
+    box-shadow: 1px 2px 15px 10px rgb(233, 36, 138);
+  }
+}
+.ulCity {
+  margin-top: 40%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+.liCity {
+  list-style: none;
+  color: whitesmoke;
+  margin-bottom: 10%;
+}
+.liCity a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
+}
+/* section 4 */
+.section4 {
+  position: relative;
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: whitesmoke;
+}
+.containerSports {
+  height: 80vh;
+  width: 80vw;
+  margin: 5% 10%;
+  background-image: url(Images/moon-4919501_1920.jpg);
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  text-align: left;
+}
+.containerSports h2 {
+  width: 60%;
+  padding-top: 5%;
+  padding-left: 5%;
+  letter-spacing: 1.5;
+  font-size: 1.75rem;
+}
+
+.liSport {
+  list-style: none;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.liSport a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.25rem;
+}
+.liSport a:hover {
+  font-size: 1.5rem;
+  color: rgb(208, 143, 232);
+}
+
+/* section 5 */
+.section5 {
+  position: relative;
+  background-image: url(Images/newletter.jpg);
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  font-family: "Cabin", sans-serif;
+}
+
+#news {
+  position: absolute;
+  top: 5%;
+  left: 63%;
+  width: 36%;
+  margin-right: auto;
+  color: white;
+  padding: 50px 65px;
+  border-radius: 10px;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+}
+
+#news ul {
+  margin-top: 5%;
+}
+
+#news ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+#news ul li a {
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+#news ul li a:hover {
+  color: wheat;
+}
+
+/* section 6 */
+.section6 {
+  position: relative;
+  background-image: url(Images/library.jpg);
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  font-family: "Cabin", sans-serif;
+}
+.split {
+  display: grid;
+  grid-template-columns: 1.6fr 2fr 1.8fr;
+}
+.poem {
+  font-size: 1.5rem;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+  text-align: center;
+  color: wheat;
+  text-shadow: 1px 1px 1px white;
+}
+
+.poem a {
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(124, 198, 244);
+}
+
+.poem a:hover {
+  color: rgb(237, 245, 166);
+}
+
+/* books part */
+.LibraryLinks {
+  margin-top: 5%;
+  color: wheat;
+}
+.LibraryLinks h1 {
+  color: red;
+  text-shadow: 1px 1px 1px white;
+  font-size: 2rem;
+}
+.LibraryLinks h3 {
+  margin-bottom: 15px;
+}
+.books {
+  display: flex;
+  flex-direction: column;
+}
+.book {
+  text-decoration: none;
+  color: wheat;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.25rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+  border: 2px solid wheat;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  opacity: 0;
+  cursor: pointer;
+}
+.book:hover {
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#imgBook1 {
+  transform: rotate(20deg);
+}
+#imgBook5 {
+  transform: rotate(-75deg);
+}
+#backFromLibrary {
+  text-decoration: none;
+  padding-left: 5px;
+  color: orangered;
+  cursor: pointer;
+}
+#backFromLibrary:hover {
+  color: rgb(243, 243, 167);
+}
