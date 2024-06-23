@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e1ddb8;
+  font-family: "Playfair Display", serif;
+}
+h1 {
+  text-align: left;
+  color: orangered;
+}
+.container {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  background-color: red;
+}
+#model {
+  height: 100%;
+}
+.leftSide {
+  margin-left: 5%;
+}
+.rightSide {
+  margin-right: 5%;
+}
+#explanation {
+  padding-top: 20%;
+  color: rgb(215, 213, 213);
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 1.5;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(141, 119, 95, 255);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin: 0px 20px;
+  transition: 0.5s;
+}
+
+a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+ul:hover a {
+  filter: blur(5px);
+  opacity: 0.2;
+}
+
+ul a:hover {
+  transform: scale(1.3);
+  opacity: 1;
+  filter: blur(0);
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(141, 119, 95, 255);
+  transition: 0.3s;
+  transform: scale(0);
+  z-index: -1;
+}
+
+a:hover:before {
+  transform: scale(1);
+}
+.leave a {
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  color: orangered;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.leave a:hover {
+  font-size: 1.7rem;
+  color: #cdc1b5;
+}
