@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* section 1 */
+.section1 {
+  margin: 5%;
+  text-align: center;
+  height: 80%;
+}
+.pink {
+  background-color: pink;
+  background-image: linear-gradient(to right bottom, rgb(251, 236, 239), pink);
+  height: 100%;
+}
+#frame {
+  position: absolute;
+  top: 29%;
+  left: 29%;
+  width: 42%;
+  z-index: 5;
+}
+#videoTitle {
+  padding-top: 2.5%;
+  padding-bottom: 6.75%;
+}
+#videoPlayer {
+  z-index: 1;
+}
+#continue {
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5%;
+  background-color: pink;
+  color: black;
+  font-size: 1rem;
+}
+#continue:hover {
+  background-color: black;
+  color: pink;
+  font-weight: 600;
+}
