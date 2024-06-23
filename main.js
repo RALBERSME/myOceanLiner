@@ -1,7 +1,7 @@
 const btn = document.getElementById("button");
 const currDate = new Date();
 let currYear = currDate.getFullYear();
-const finalYear = 1900;
+const finalYear = 1915;
 
 function getYearBefore() {
   btn.textContent = `you are now in year: ${currYear}`;

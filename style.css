@@ -52,7 +52,7 @@ h1 {
     margin-left: 30%;
     margin-top: 10%;
   }
-  92% {
+  /* 92% {
     padding: 2.5% 6%;
     transform: skewX(0deg) translateX(250px) rotate(10deg) scale(1.5);
 
@@ -85,8 +85,8 @@ h1 {
     transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);
     background-image: linear-gradient(blanchedalmond, whitesmoke);
     margin-left: 30%;
-    margin-top: 10%;
-  }
+    margin-top: 10%; */
+  /* } */
   100% {
     padding: 2.5% 6%;
     transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);

@@ -92,3 +92,13 @@ h1 {
   font-weight: bold;
   color: orangered;
 }
+#stay {
+  color: black;
+  cursor: pointer;
+}
+#stay:hover {
+  color: rgb(253, 253, 209);
+  background-color: black;
+  border-radius: 5%;
+  font-size: 2rem;
+}
