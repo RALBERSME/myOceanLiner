@@ -151,9 +151,44 @@
     </section>
     <!-- section4 -->
     <section class="section4" id="jumptoBar">
-      <div class="container4">
-        <h1>Welcome to the Lusitania Bar</h1>
+      <div class="splitBar">
+        <div class="container4">
+          <h1>Welcome to the Lusitania Bar</h1>
+        </div>
+        <div class="containerDrink">
+          <h3>
+            Every guest is invited to a
+            <em>free welcome drink</em>.<br />
+            Click this button and let yourself be surprised which drink it will
+            be. You will see up to three ingredients. If you are allergic, let
+            the bartender know and he will take this into account.
+          </h3>
+          <br />
+          <button id="drinkBtn" onclick="getCocktails()">
+            Click for random drink
+          </button>
+          <br /><br />
+          <div class="drink">
+            <h3>
+              <u>Name of your ordered drink:</u><br /><br />
+              <span id="output1"></span>
+            </h3>
+            <br />
+            <img
+              id="output2"
+              src="https://cdn.pixabay.com/photo/2023/12/16/12/37/ai-generated-8452391_640.png"
+            /><br /><br />
+
+            <br />
+            <h4>Indegrient 1: <span id="ingredient1">Love</span></h4>
+            <h4>Indegrient 2: <span id="ingredient2">Passion</span></h4>
+            <h4>Indegrient 3: <span id="ingredient3">Creativity</span></h4>
+          </div>
+          <br />
+          <a id="upToTop" href="#toTop">Back To Top</a>
+        </div>
       </div>
     </section>
+    <script src="food.js"></script>
   </body>
 </html>
