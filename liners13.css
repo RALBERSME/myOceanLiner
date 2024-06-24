@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.container {
+  margin: 5%;
+  background-color: whitesmoke;
+}
+#map:hover {
+  transform: translateX(500px) translateY(-50px) scale(1.75);
+}
+label {
+  font-size: 1.5rem;
+}
+#source {
+  font-size: 0.9rem;
+}
+#bnumber {
+  background-color: antiquewhite;
+  border-radius: 10%;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 2%;
+}
+#submitBtn {
+  background-color: antiquewhite;
+  border-radius: 10%;
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 78%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#submitBtn:hover {
+  background-color: rgb(242, 216, 181);
+  margin-top: 7px;
+}
+.resultContainer {
+  margin: 5%;
+  height: 80vh;
+}
+.resultContainer li {
+  list-style: none;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+#continue {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+#continue:hover {
+  text-decoration: overline underline;
+  color: rgb(242, 216, 181);
+  padding: 5px;
+  background-color: black;
+  border-radius: 5%;
+}
+.red {
+  color: orangered;
+}
+.green {
+  color: green;
+}
+.hide {
+  display: none;
+}

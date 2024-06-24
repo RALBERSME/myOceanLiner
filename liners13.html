@@ -3,9 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="liners13.css" />
     <title>The lifeboats</title>
   </head>
   <body>
-    Time to get in your lifeboat
+    <div class="split">
+      <div class="container">
+        <h1>It's time to get in the lifeboat!</h1>
+        <br />
+        <h2>Which one do you choose?</h2>
+        <h2>If map is too small, hover over it.</h2>
+        <br />
+        <form action="" id="loginForm">
+          <label for="bnumber" id="label"
+            >Enter number of your lifeboat (number between 1 and 22):</label
+          >
+          <input
+            type="number"
+            id="bnumber"
+            class="form-control"
+            name="bnumber"
+            min="1"
+            max="22"
+          />
+
+          <button id="submitBtn" type="submit">Submit</button>
+        </form>
+
+        <br /><br />
+        <div class="lifeboatMap">
+          <img id="map" src="Images/lifeboats_empty.png" />
+          <p id="source">
+            Source of map:
+            https://www.reddit.com/r/Shipwrecks/comments/122p819/a_diagram_showing_the_fate_of_the_lifeboats_of/
+          </p>
+        </div>
+      </div>
+      <div class="result">
+        <div class="resultContainer hide">
+          <h2 id="outPut"></h2>
+          <br />
+          <h2>
+            As you can see, the overview of the lifeboats on the left has been
+            updated. There you can see what happened to each lifeboat.<br />
+            Here everything in detail:
+          </h2>
+          <br /><br />
+          <ul>
+            <li class="green">
+              <strong>Lifeboat 1 </strong> was launched only with up to three
+              people
+            </li>
+            <li class="red">
+              <strong>Lifeboat 2 </strong>went down with the ship
+            </li>
+            <li class="red">
+              <strong>Lifeboat 3 </strong>could not be lowered because of the
+              cables and ropes
+            </li>
+            <li class="red">
+              <strong>Lifeboat 4 </strong>went down with the ship
+            </li>
+            <li class="red">
+              <strong>Lifeboat 5 </strong>was destroyed by the torpedo under it
+            </li>
+            <li class="red">
+              <strong>Lifeboat 6 </strong>went down with the ship
+            </li>
+            <li class="red">
+              <strong>Lifeboat 7 </strong>could not be lowered because of the
+              cables and ropes
+            </li>
+            <li class="red">
+              <strong>Lifeboat 8 </strong>went down with the ship
+            </li>
+            <li class="red">
+              <strong>Lifeboat 9 </strong>was lowered, but got stuck and was
+              lost
+            </li>
+            <li class="red"><strong>Lifeboat 10 </strong>failed</li>
+            <li class="green">
+              <strong>Lifeboat 11 </strong>successfully launched
+            </li>
+            <li class="red"><strong>Lifeboat 12 </strong>failed</li>
+            <li class="green">
+              <strong>Lifeboat 13 </strong>successfully launched, but only half
+              full
+            </li>
+            <li class="red"><strong>Lifeboat 14 </strong>damaged</li>
+            <li class="green">
+              <strong>Lifeboat 15 </strong>successfully launched
+            </li>
+            <li class="red"><strong>Lifeboat 16 </strong>was capsized.</li>
+            <li class="red"><strong>Lifeboat 17 </strong>was lost</li>
+            <li class="red">
+              <strong>Lifeboat 18 </strong>crushed and injured a number of
+              people
+            </li>
+            <li class="red"><strong>Lifeboat 19 </strong>was lost</li>
+            <li class="green">
+              <strong>Lifeboat 20 </strong>not successfully launched
+            </li>
+            <li class="green">
+              <strong>Lifeboat 21 </strong>arrived safely in the small port of
+              Queenstown
+            </li>
+            <li class="red">
+              <strong>Lifeboat 22 </strong>came loose from the ship though
+              upside down but some survivors clung to it
+            </li>
+          </ul>
+          <br /><a id="continue" href="liners14.html"
+            >click here to continue
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="liners13.js"></script>
   </body>
 </html>
