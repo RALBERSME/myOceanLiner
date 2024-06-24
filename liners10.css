@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/14/04/36/seamless-pattern-1822615_960_720.png");
+  background-position: center/cover;
+  background-repeat: repeat;
+  font-family: "Kosugi Maru", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.overlay {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+h1 {
+  margin: 10px;
+}
+h2 {
+  text-decoration: overline underline;
+}
+p {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+.cta,
+a {
+  color: goldenrod;
+}
+a:hover {
+  color: orangered;
+}
+.bothLines {
+  text-decoration: overline underline;
+}
+.box {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 200px;
+  margin: 50px 10%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
