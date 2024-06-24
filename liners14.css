@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  margin: 5%;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  position: relative;
+}
+
+#shipTitle {
+  position: absolute;
+  top: -3.5%;
+  height: 45%;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/17/38/england-152143_640.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transform: rotateX(0deg);
+  animation: flipUp 4s 0s ease-in-out forwards;
+}
+
+@keyframes flipUp {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+h1 {
+  color: rgb(150, 11, 11);
+}
+
+.sessionLinks {
+  width: 100%;
+}
+.linkBtn {
+  text-decoration: none;
+  padding: 25px;
+  margin: 5px;
+  width: 15%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  background-color: rgb(150, 11, 11);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+.linkBtn:hover {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  color: red;
+  border-color: 2px solid red;
+  background-color: white;
+}
+#representTitle {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  text-align: center;
+  color: rgb(150, 11, 11);
+  font-size: 2rem;
+}
+.section2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  height: 70%;
+  width: 45%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 2px 11px 31px rgba(0, 0, 0, 0.2);
+  color: black;
+  font-size: 0.85rem;
+  padding: 25px;
+}
+.letters {
+  margin: 25px;
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 15px 50px 30px;
+  border: 25px solid transparent;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+
+.initials,
+.initials2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.initialsLeft {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.initialsRight {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.card a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.4);
+}
+.card a:hover,
+.card2 a:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+.died {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/*section 3 */
+.changeSectionHight {
+  height: 200vh;
+}
+.section3 {
+  margin: 2.5%;
+  background-color: white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+#guestsTitle {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  text-align: center;
+  color: rgb(150, 11, 11);
+  font-size: 2rem;
+}
+.card2 {
+  border: 19px outset #ff0000;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+.letters2 {
+  margin: 15px;
+  position: relative;
+  height: 110px;
+  width: 150px;
+  border-radius: 5px 5px 50px;
+  border: 15px solid transparent;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.card2 a {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.4);
+}
+
+/*section 4*/
+.section4 {
+  margin: 2.5%;
+  background-color: white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+#videoTitle {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  text-align: center;
+  color: rgb(150, 11, 11);
+  font-size: 2rem;
+}
+#introVideo {
+  text-align: center;
+  margin-top: -1.5%;
+}
+#myVideo {
+  background-color: black;
+}
+/*section 5*/
+.section5 {
+  margin: 2.5%;
+  background-color: whitesmoke;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+#vipTitle {
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+  text-align: center;
+  color: rgb(150, 11, 11);
+  font-size: 2rem;
+}
+.cardContainer {
+  margin-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.card3 {
+  margin: 5px;
+  padding: 15px;
+  height: 350px;
+  width: 250px;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+}
+.card3:hover {
+  background-color: rgb(239, 241, 188);
+}
+.card3a {
+  width: 80%;
+  height: 5%;
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  background-image: linear-gradient(-180deg, #fa380c, #ff0000);
+}
+.card3 a:hover {
+  background-image: linear-gradient(-180deg, rgb(245, 123, 237), #fa380c);
+}
+.dead {
+  background-color: black;
+  color: white;
+}
+.dead:hover {
+  color: black;
+  background-color: rgb(199, 198, 198);
+}
+/*continue*/
+#continue {
+  background-color: #bd6d5c;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+#continue:hover {
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #aa5f4f;
+  border-color: 2px solid #aa5f4f;
+  background-color: white;
+}
+
+/* back  to Top*/
+#back {
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  width: 15%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  background-color: rgb(150, 11, 11);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+}
+#back:hover {
+  color: rgb(150, 11, 11);
+  border: 2px solid rgb(150, 11, 11);
+  background-color: white;
+}
