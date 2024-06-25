@@ -32,7 +32,7 @@ section {
 }
 .container1 li {
   list-style: none;
-  margin-bottom: 1.25%;
+  margin-bottom: 1%;
 }
 .container1 li a {
   font-family: "Playfair Display", serif;
@@ -93,7 +93,7 @@ section {
 .card1 {
   width: 450px;
   height: 300px;
-  background-image: url("https://cdn.pixabay.com/photo/2024/04/14/12/21/ai-generated-8695332_640.png");
+  background-image: url("Images/dancer1.png");
   background-position: 50% 50%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
@@ -141,7 +141,7 @@ section {
 .card4 {
   width: 450px;
   height: 300px;
-  background-image: url("https://cdn.pixabay.com/photo/2024/06/12/17/29/ai-generated-8825997_640.png");
+  background-image: url("Images/dancer2.png");
   background-position: 50% 50%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 10px;

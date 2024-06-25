@@ -145,7 +145,7 @@ section {
   margin: 5%;
   height: 80%;
   text-align: center;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/10/14/16/background-1814372_640.jpg");
+  background-image: url("Images/cafeTapete.png");
   background-repeat: repeat;
 }
 
@@ -221,7 +221,6 @@ section {
   margin: 5%;
   height: 80%;
   text-align: center;
-  background-image: url("https://cdn.pixabay.com/photo/2023/12/16/12/37/ai-generated-8452391_640.png");
   background-image: url("Images/ai-generated-8770949_1920.jpg");
   background-repeat: no-repeat;
 }
