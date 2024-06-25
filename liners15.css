@@ -116,3 +116,8 @@ a {
 .card:hover .content {
   color: white;
 }
+
+.orangered {
+  color: orangered;
+  font-weight: bold;
+}
