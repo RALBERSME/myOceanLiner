@@ -18,22 +18,23 @@ body {
   text-align: center;
 }
 p {
-  margin-top: 1%;
+  margin-top: 0.5%;
 }
 #ribbon {
   height: 20%;
   width: 100%;
-  background-image: url("https://cdn.pixabay.com/photo/2014/04/02/10/24/banner-303754_640.png");
-  background-position: 50% 55%;
+  background-image: url("Images/blueRibbon.png");
+  background-repeat: repeat-x;
+  background-position: 45% 55%;
 }
 .blue {
   color: rgb(3, 116, 197);
 }
 #ship2 {
   margin-left: 106%;
-  margin-top: 1.5%;
-  width: "200px";
-  height: "100px";
+  margin-top: 0.5%;
+  width: "180px";
+  height: "60px";
   animation: shipping2 14s 0s ease-in infinite;
 }
 span {
