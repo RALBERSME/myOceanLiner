@@ -266,6 +266,9 @@ section {
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.5rem;
 }
+.liCity a:hover {
+  color: rgb(231, 231, 162);
+}
 /* section 4 */
 .section4 {
   position: relative;
