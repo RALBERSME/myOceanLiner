@@ -33,7 +33,7 @@ h1 {
   font-size: 1.25rem;
   background-color: blanchedalmond;
   cursor: pointer;
-  transform: skewX(35deg) translateX(250px) rotate(-1deg);
+  transform: skewX(35deg) translateX(250px) rotate(-1deg) scale(1);
   transform-origin: bottom right;
   transition: all 1s;
   /* animation: startAdventure 5s 2s linear forwards; */
@@ -52,41 +52,7 @@ h1 {
     margin-left: 30%;
     margin-top: 10%;
   }
-  /* 92% {
-    padding: 2.5% 6%;
-    transform: skewX(0deg) translateX(250px) rotate(10deg) scale(1.5);
 
-    margin-left: 30%;
-    margin-top: 10%;
-  }
-  93% {
-    padding: 2.5% 6%;
-    transform: skewX(0deg) translateX(250px) rotate(-10deg) scale(1.5);
-    background-image: linear-gradient(rgb(222, 238, 247), blanchedalmond);
-    margin-left: 30%;
-    margin-top: 10%;
-  }
-  94% {
-    padding: 2.5% 6%;
-    transform: skewX(0deg) translateX(250px) rotate(10deg) scale(1.5);
-    background-image: linear-gradient(blanchedalmond, whitesmoke);
-    margin-left: 30%;
-    margin-top: 10%;
-  }
-  95% {
-    padding: 2.5% 6%;
-    transform: skewX(0deg) translateX(250px) rotate(-10deg) scale(1.5);
-    background-image: linear-gradient(rgb(222, 238, 247), blanchedalmond);
-    margin-left: 30%;
-    margin-top: 10%;
-  }
-  96% {
-    padding: 2.5% 6%;
-    transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);
-    background-image: linear-gradient(blanchedalmond, whitesmoke);
-    margin-left: 30%;
-    margin-top: 10%; */
-  /* } */
   100% {
     padding: 2.5% 6%;
     transform: skewX(0deg) translateX(250px) rotate(0deg) scale(1.5);
@@ -95,3 +61,94 @@ h1 {
     margin-top: 10%;
   }
 }
+
+/* Mobile Message */
+.mobile-message {
+  display: none;
+}
+
+/* Media Query: Mobile Devices */
+@media screen and (max-width: 800px) {
+  .mobile-message {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+  }
+}
+/* On screens that are 992px or less, set the background color to blue */
+/* @media screen and (max-width: 992px) {
+  body {
+    height: 100vh;
+    background-image: url("Images/receptionist.jpg");
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  h1 {
+    margin-bottom: 1.5%;
+    font-size: 2rem;
+  }
+  .container {
+    margin-top: 1.5%;
+    margin-left: 3%;
+    width: 90%;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  #button {
+    margin-left: 0%;
+    margin-top: 58.5%;
+    padding: 1.5% 3%;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transform: skewX(35deg) translateX(-100px) translateY(90px) rotate(-1deg)
+      scale(1);
+    transform-origin: bottom right;
+    transition: all 1s;
+    /* animation: startAdventure 5s 2s linear forwards; 
+  }
+
+  @keyframes startAdventure {
+    0% {
+      padding: 1.5% 3%;
+      transform: skewX(35deg) translateX(0px) translateY(70px) rotate(-1deg)
+        scale(1);
+      margin-left: 0%;
+      margin-top: 58.5%;
+    }
+    90% {
+      padding: 1.5% 3%;
+      transform: skewX(0deg) translateX(50px) translateY(80px) rotate(0deg)
+        scale(1.25);
+      margin-left: 3.5%;
+      margin-top: 50%;
+    }
+
+    100% {
+      padding: 1.5% 3%;
+      transform: skewX(0deg) translateX(50px) translateY(80px) rotate(0deg)
+        scale(1.25);
+      background-image: linear-gradient(blanchedalmond, whitesmoke);
+      margin-left: 3.5%;
+      margin-top: 50%;
+    }
+  }
+} */
